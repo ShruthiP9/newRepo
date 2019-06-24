@@ -1,0 +1,47 @@
+@media screen and (max-width:1200px)
+{
+    button{
+    background-color: rgb(20, 146, 248);
+    color:white;
+}
+    width:250px;
+
+.form-control{
+    width:250px;
+
+}
+pre{
+    color:grey;
+}
+
+@media screen and (max-width:300px)
+{
+
+body {
+    box-sizing: border-box;;    
+    width:300px;
+    height:430px;
+  align-content: center;
+    background-color: lightgreen;
+    border: 3px solid;
+}
+.floating {
+    height: 100px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+​
+h4{
+    
+    text-align: center;
+    color:#50504D;
+}
+select{
+    border-color: white;
+    display: block;
+}
+
+}
+
+}

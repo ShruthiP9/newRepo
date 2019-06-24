@@ -1,0 +1,65 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body class="floating">
+    <form #lgForm="ngForm" (ngSubmit)="shruthi(lgForm.value)">
+
+        <div align="center">
+            <select class="arrow down" style="float:right;">
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="kannada">Kannada</option>
+              <option value="telugu">Telugu</option>
+            </select><br>
+            <br>
+            <h4>Login In To Your Account</h4>
+
+
+            <div class="form-group">
+
+                <label for="email"></label>
+                <input type="email" class="form-control" ngModel name="email" placeholder="Email or phone or username" style="font-style:italic" required>
+
+                <label for="password"></label>
+                <input type="password" class="form-control" ngModel name="password" placeholder="Password" style="font-style:italic" required>
+            </div>
+            <input type="checkbox"> Keep me logged in for 30 days &nbsp; &nbsp; <span class="psw"> <a href="#">Forgot password?</a></span><br>
+            <br>
+            <br>
+            <button type="submit">Log In</button>
+
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+
+
+            <span class="acc"><a href="#" style="color:grey">Need an account?</a></span>&nbsp;<span class="signup"> <a href="#">Sign up</a></span>
+            <div *ngIf='found'>
+                "successfull logged in"
+                <kbd>ctrl+p</kbd>
+            </div>
+
+
+        </div>
+
+        <div #starDiv>
+
+
+            <i id="star5" (click)="updateRating(1)" class="icon-star-empty"></i>
+            <i id="star4" (click)="updateRating(2)" class="icon-star-empty"></i>
+            <i id="star3" (click)="updateRating(3)" class="icon-star-empty"></i>
+            <i id="star2" (click)="updateRating(4)" class="icon-star-empty"></i>
+            <i id="star1" (click)="updateRating(5)" class="icon-star-empty"></i>
+        </div>
+
+
+    </form>
+    <a [routerLink]="['/dashboard']"> <button (click)="dashboard()" class="btn btn-info"> link to other page </button></a>
+</body>
+
+</html>
